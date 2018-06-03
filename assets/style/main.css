@@ -1,0 +1,11 @@
+.jumbotron {
+    background: #fff;
+}
+
+.jumbotron .container {
+    max-width: 50rem;
+}
+
+.descr {
+    margin: 3rem 0;
+}
