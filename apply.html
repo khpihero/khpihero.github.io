@@ -1,0 +1,81 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>Стать супергероем</title>
+</head>
+<body>
+
+<section class="jumbotron text-center">
+    <div class="container" id="thanks" style="display: none;">
+        <div class="text-center thanksimg">
+            <img src="assets/img/thanks.jpeg" alt="Spasibo" width="180" height="180">
+        </div>
+        <h1 class="jumbotron-heading">Спасибо <3</h1>
+        <p class="lead">Мы свяжемся с тобой, герой. А пока можешь подписаться на наш канал о ХПИ в Telegram, там весело:
+        <div class="button-group">
+            <a class="btn btn-info btn-lg" style="color:#fff;" href="https://t.me/khpionline">Открыть лучший канал о ХПИ</a>
+        </div>
+    </div>
+    <div class="container" id="form">
+        <h1 class="jumbotron-heading" id="header">База Супергероев ХПИ</h1>
+        <p class="lead descr" id="descr">
+            Если хочешь стать одним из супергероев, заполни анкету и мы добавим её. Нам понадобится название твоей кафедры, твое имя и ссылку на Facebook или твой @username в Telegram на выбор.
+        </p>
+        <form class="form">
+            <div class="row">
+                <div class="col-md-6 col-12 form-group">
+                    <label class="sr-only">Институт</label>
+                    <select id="institute" class="custom-select form-control-lg">
+                        <option disabled selected>Выбрать факультет/институт</option>
+                    </select>
+                </div>
+                <div class="col-md-6 col-12 form-group">
+                    <label class="sr-only">Кафедра</label>
+                    <select id="cathedra" class="custom-select form-control-lg" required>
+                        <option disabled selected>Выбрать кафедру</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <input name="name" class="form-control form-control-lg" autocomplete='given-name' type="text" value="" id="name" placeholder="Введи свое имя">
+            </div>
+            <div class="form-group left">
+                <input id="dormitoryHelp" type="checkbox" value="true" name="dormitoryHelp" class="form-check-input form-control-lg">
+                <label class="form-check-label">Готов ответить на вопросы, связанные с общежитием</label>
+            </div>
+
+            <div class="form-group left">
+                <input id="hasFacebook" type="checkbox" value="true" name="dormitoryHelp" class="form-check-input form-control-lg">
+                <label class="form-check-label">Со мной можно связаться через Facebook</label>
+            </div>
+            <div class="form-group" id="facebookInput" style="display: none;">
+                <input name="facebook" class="form-control form-control-lg" type="url" value="" id="facebook" placeholder="Вставь ссылку на свой Facebook">
+            </div>
+            <div class="form-group left">
+                <input id="hasTelegram" type="checkbox" value="true" name="dormitoryHelp" class="form-check-input form-control-lg">
+                <label class="form-check-label">Со мной можно связаться через Telegram</label>
+            </div>
+            <div class="form-group input-group mb-3" id="telegramInput" style="display: none;">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">t.me/</span>
+                </div>
+                <input name="telegram" class="form-control form-control-lg" type="text" value="" required id="telegram" placeholder="Твое имя пользователя в Telegram">
+            </div>
+            <div class="form-group">
+                <button id="apply" name="apply" class="btn btn-lg btn-primary">Отправить заявку</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/apply.js"></script>
+</body>
+</html>

@@ -1,3 +1,5 @@
+window.api = 'http://0.0.0.0:3569/';
+
 $('document').ready(function() {
   $.get('data/departments.json', function (departments) {
 

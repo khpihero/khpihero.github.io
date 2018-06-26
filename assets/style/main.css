@@ -7,5 +7,42 @@
 }
 
 .descr {
-    margin: 3rem 0;
+    margin-top: 1rem;
+}
+
+.left {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.thanksimg {
+    padding: 25px;
+}
+
+.cards {
+    padding: 20px;
+}
+
+.card {
+    margin: 15px;
+}
+
+.btn-tg, .btn-tg:hover {
+    background-color: #0088cc;
+    border-color: #0088cc;
+    color: #fff !important;
+}
+
+.btn-tg:hover, .btn-tg:active {
+    opacity: 0.8;
+}
+
+.btn-fb, .btn-fb:hover {
+    background-color: #3b5998;
+    border-color: #3b5998;
+    color: #fff !important;
+}
+
+.btn-fb:hover, .btn-fb:active {
+    opacity: 0.8;
 }
