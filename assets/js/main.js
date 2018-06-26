@@ -1,4 +1,4 @@
-window.api = 'https://tgdo.me:3569';
+window.api = 'https://tgdo.me:3569/';
 
 $('document').ready(function() {
   $.get('data/departments.json', function (departments) {
